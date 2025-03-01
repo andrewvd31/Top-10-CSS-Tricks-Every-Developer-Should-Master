@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scroll-snap</title>
+    <style>
+        .scroll-container {
+            width: 500px;
+            height: 300px;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            border: 2px solid black;
+        }
+        .scroll-item {
+            height: 200px;
+            background: rgb(176, 255, 207);
+            scroll-snap-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="scroll-item">Item 1</div>
+        <div class="scroll-item">Item 2</div>
+        <div class="scroll-item">Item 3</div>
+        <div class="scroll-item">Item 4</div>
+    </div>
+</body>
+</html>

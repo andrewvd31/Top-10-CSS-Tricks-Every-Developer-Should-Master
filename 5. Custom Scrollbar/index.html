@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Scrollbar</title>
+    <style>
+        .scroll-box {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+            border: 2px solid black;
+        }
+        .content {
+            height: 400px;
+            padding: 20px;
+            background: rgb(205, 255, 197);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-box">
+        <div class="content">Scroll to see the custom scrollbar</div>
+    </div>
+</body>
+</html>
