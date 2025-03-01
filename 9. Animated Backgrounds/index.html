@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Animated Backgrounds</title>
     <style>
-        .video-container {
-            width: 80%;
-            aspect-ratio: 16 / 9;
-            color: white;
-            font-size: 24px;
+        @keyframes moveBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .animated-bg {
+            height: 100vh;
+            background: linear-gradient(45deg, blue, pink);
+            background-size: 400% 400%;
+            animation: moveBG 5s infinite alternate;
         }
     </style>
 </head>
 <body>
-    <video class="video-container" muted controls autoplay>
-        <source src="./Nature-video.mp4">
-    </video>
+    <div class="animated-bg"></div>
 </body>
 </html>
